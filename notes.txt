@@ -1,0 +1,106 @@
+		git init 
+
+//👆🏼this command is to initialise git repository it will create all the required folders
+
+		git status
+
+//👆🏼this command is used to check which files are not backup yet
+
+		git add .              // . represents all files
+		git add <file name>
+
+//👆🏼this command will put all or specified files on stage
+
+		git commit -m "message"
+
+//👆🏼this command is used to commit all the changes
+
+		git restore --stage <file name>
+
+//👆🏼this will remove file from stage area
+
+		git log 
+
+//👆🏼this will return all the log related to git
+
+		git reset <commit id>
+
+//👆🏼 this will reset or undo till commit id specified
+
+		git stash
+
+//👆🏼this will put all the changes from stage to stash(back stage)
+
+		git stash pop
+
+//👆🏼this will bring all the changes back from stash to stage
+
+		git stash clear
+
+//👆🏼this will clear the stash space
+
+		git remote add origin <git link>
+
+//👆🏼this is used to connect with repository 
+
+		git remote -v
+
+//👆🏼this is used to get all the instances of git repository  
+
+		git fetch origin 
+
+//👆🏼this is to download contents from a remote repository 
+
+		git remote rm <origin name>
+
+//👆🏼this command is used to delete instance of repository 
+
+		git push -f origin <branch name>
+
+//👆🏼this command will force push the content to branch
+
+		git remote
+
+//👆🏼this command will let you know the current connected instance
+
+		git log --online
+
+//👆🏼this is used to get online logs
+
+		git clone <git link> <folder name>
+
+//👆🏼this is used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location.
+
+		git remote add upstream <repository link>
+
+//👆🏼this is use to add upstream (main repository) link
+
+		git branch <branch name>
+
+//👆🏼this is used to create new branch
+
+		git checkout <branch name>
+
+//👆🏼this is used to change branch
+
+		git fetch --all --prune
+
+//👆🏼It will connect to a shared remote repository remote and fetch all remote branch refs. It will then delete remote refs that are no longer in use on //the remote repository.
+
+		git reset --hard upstream/main
+
+//👆🏼You can reset your local master branch to the upstream version and push it to your origin repository. 
+
+		git pull upstream main
+
+//👆🏼this command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. 
+
+		git rebase -i <commit id>
+		s - squash multiple commit in one single commit
+		pick - to mark commit as separate commit
+
+//👆🏼this command is use to mearge commits and treat them as one
+
+		git reset --hard <commit id>
+
+//👆🏼this will roll back the repository state as before commit X. It will make your local code and local history be just like it.
